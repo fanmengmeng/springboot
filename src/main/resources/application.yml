@@ -1,0 +1,17 @@
+server:
+  port: 8082
+  tomcat:
+    uri-encoding: utf-8
+  servlet:
+    context-path: /
+spring:
+  profiles:
+    active: dev
+  servlet:
+    multipart:
+      max-file-size: 30000000
+      max-request-size: 100000000
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
